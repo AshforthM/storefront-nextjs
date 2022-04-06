@@ -13,7 +13,7 @@ function Product({ product, ...props }) {
   return (
     <aside className={styles.product}>
       <header>
-        <Image src={imageUrl} alt={productName} width={409} height={240}/>
+        <Image src={imageUrl} alt={productName} width={409} height={240} quality={100}/>
       </header>
       <p className={styles.name}>{productName}</p>
       <p className={styles.price}>{productPrice}</p>
