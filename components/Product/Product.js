@@ -1,5 +1,7 @@
 import React from "react";
+
 import Button from "../Button/Button";
+import Image from "next/image";
 
 import styles from "./styles.module.scss";
 
@@ -11,7 +13,7 @@ function Product({ product, ...props }) {
   return (
     <aside className={styles.product}>
       <header>
-        <img src={imageUrl} alt="" />
+        <Image src={imageUrl} alt={productName} width={409} height={240}/>
       </header>
       <p className={styles.name}>{productName}</p>
       <p className={styles.price}>{productPrice}</p>
