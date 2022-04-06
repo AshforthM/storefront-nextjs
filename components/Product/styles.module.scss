@@ -1,0 +1,46 @@
+.product {
+    margin: 2rem auto;
+    max-width: 420px;
+
+    h2 {
+        padding: 0.5rem 1rem;
+        color: #9ca3af;
+        box-shadow: 0 1px 3px 0 rgb(0, 0, 0 / 0.1), 0 1px 2px -1px rgb(0, 0, 0 / 0.1);
+        border-radius: 3px;
+    }
+
+    img {
+        width: fit-content;
+        height: 240px;
+    }
+
+    footer {
+        margin: 1rem 0;
+    }
+
+    button{
+        border: none;
+        background-color: #3b82f6;
+        color: #eff6ff;
+        padding: 0.5rem 2rem;
+        border-radius: 3px;
+        font-size: 1.25rem;
+    }
+}
+
+.price {
+    font-size: 1.125rem;
+    font-weight: 200;
+    color: #64748b;
+}
+
+.description {
+    font-size: 14px;
+    color: #94a3b8;
+}
+
+.name {
+    font-size: 1.75rem;
+    font-weight: 800;
+    color: #1e293b;
+}

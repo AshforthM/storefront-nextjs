@@ -9,8 +9,6 @@
   border-radius: 3px;
 }
 .product img {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
   width: fit-content;
   height: 240px;
 }
@@ -42,4 +40,5 @@
   font-weight: 800;
   color: #1e293b;
 }
+
 /*# sourceMappingURL=styles.module.css.map */
