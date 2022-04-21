@@ -1,9 +1,13 @@
+import { loadStripe } from "@stripe/stripe-js";
+
 import Head from "next/head";
 import PageTitle from "../components/PageTitle/PageTitle";
 import Product from "../components/Product/Product";
 
 export default function Home(props) {
-  const products = props.products;
+  const products = props.products.slice(0,3);
+
+  const stripePromise = loadStripe(process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY);
 
   return (
     <>
@@ -32,8 +36,8 @@ export async function getStaticProps() {
 
   return {
     props: {
-      products,
-      fallback: false,
+      products
     },
+    revalidate:120
   };
 }

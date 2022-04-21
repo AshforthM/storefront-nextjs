@@ -5,8 +5,8 @@ import Image from "next/image";
 
 import styles from "./styles.module.scss";
 
-function Product({ product, ...props }) {
-  const { imageUrl, productName, productPrice, productDescription } = {
+function Product({children, product, ...props }) {
+  const { imageUrl, productName, productPrice, productDescription, uid } = {
     ...product,
   };
 
@@ -19,8 +19,8 @@ function Product({ product, ...props }) {
       <p className={styles.price}>{productPrice}</p>
       <p className={styles.description}>{productDescription}</p>
       <footer>
-        <form action="#" method="POST">
-          <input type="hidden" name="uid" value="uid" />
+        <form action="/api/checkout" method="POST">
+          <input type="hidden" name="uid" value={uid} />
           <button type="submit">Buy Now</button>
         </form>
       </footer>
