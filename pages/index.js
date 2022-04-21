@@ -14,7 +14,6 @@ export default function Home(props) {
       <Head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         <title>VHS Storefront</title>
       </Head>
       <PageTitle title="VHS StoreFront" tagline="Featured Products" />
