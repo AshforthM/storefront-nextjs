@@ -1,34 +1,22 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Storefront VHS - Next.js
+Sample storefront website for selling VHS tapes. Created using Next.js, Firebase, and Stripe for payments. No actual products are sold on this website. Deployed using Vercel.
 
-## Getting Started
+## [Link to live website](https://vhs-storefront.vercel.app/)  
+<br />
 
-First, run the development server:
+![Screenshot of featured products](/static/images/featured.png)
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+![Screenshot of payment](/static/images/payment.png)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Running the app
+If you want to run this on your local machine, you will need your own Firebase Realtime Database, which you can set up for free [here](https://firebase.google.com/). Substitute the fetch url in [index.js](/pages/index.js) with your own realtime database url.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+I added products to firebase using my [React VHS Storefront](https://github.com/AshforthM/storefront-react) project.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+You will also require a Stripe account and API keys, which you can get [here](https://stripe.com/). Create a .env file at the root of the project with your API keys (env variable names in [index.js](/pages/index.js) and [checkout.js](/pages/api/checkout.js)), and it should run locally with your own firebase data and Stripe account.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Additional Resources
+* [Next.js](https://nextjs.org/)
+* [Stripe](https://stripe.com/)
+* [Firebase Get Started](https://cloud.google.com/firestore/docs/client/get-firebase)
+* [Vercel](https://vercel.com/)
